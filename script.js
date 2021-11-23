@@ -79,7 +79,7 @@ var special = [
 
 function getPasswordOptionsFromUser() {
     var  lengthOfPassword = parseInt(prompt("How long should the password be?"));
-    if (lengthOfPassword < 8 && lengthOfPassword > 128) {
+    if (lengthOfPassword < 8 || lengthOfPassword > 128) {
         alert("This needs to be between 8 to 128 characters");
     }
 
